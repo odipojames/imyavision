@@ -47,7 +47,9 @@ body {
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
-
+#cont{
+  color: var(--white-color);
+}
 h2,
 h3,
 h4,
@@ -183,6 +185,7 @@ strong {
   border-radius: 50%;
 }
 
+
 .custom-icon::before {
   border: 3px solid transparent;
 }
@@ -255,7 +258,7 @@ strong {
 .navbar-brand {
   font-size: 32px;
   font-weight: var(--font-weight-bold);
-  color: var(--bl-color);
+  color: var(--primary-color);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -278,9 +281,47 @@ strong {
   color: var(--bl-color);
 }
 
+
 .projects-detail-page .navbar-nav .nav-link.active {
   color: var(--secondary-color);
 }
+
+/* Style for the dropdown container */
+.nav-item {
+  position: relative;
+}
+
+
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style for the dropdown links */
+.dropdown-menu a {
+  color: var(--secondary-color);
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+  color: var(--bl-color);
+}
+
+/* Show the dropdown content when the dropdown button is clicked */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
 
 .navbar-toggler {
   border: 0;
@@ -379,6 +420,9 @@ strong {
   height: calc(100vh - 133px);
 }
 
+.overview{
+  color: var(--white-color);
+}
 .section-hero {
   background-image: url('../images/jason-goodman-MUZFKa_mttU-unsplash.jpg');
   background-repeat: no-repeat;
@@ -509,6 +553,8 @@ strong {
   margin-bottom: 24px;
   padding: 40px;
 }
+
+
 
 
 /*---------------------------------------
