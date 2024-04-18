@@ -356,6 +356,8 @@ strong {
   top: 0;
 }
 
+
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
   transform: rotate(45deg);
 }
@@ -398,6 +400,7 @@ strong {
 .breadcrumb-item.active {
   color: var(--primary-color);
 }
+
 
 
 /*---------------------------------------
@@ -615,7 +618,25 @@ strong {
   top: 0;
   height: 100%; 
   width: auto;
+  object-fit: cover;
+  display: none; 
 }
+
+
+
+
+/* Show the logo image on large screens */
+@media (min-width: 992px) {
+  .logo-image {
+    display: block;
+  }
+}
+
+
+
+
+
+
 
 
 /*---------------------------------------
