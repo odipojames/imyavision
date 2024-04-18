@@ -732,6 +732,13 @@ strong {
 
 .google-map {
   border-radius: 20px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .google-map {
+    max-width: 600px;
+  }
 }
 
 .contact-icon {
